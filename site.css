@@ -3,34 +3,96 @@ body {
   padding: 0;
   background-color: black;
 
-  
+
   width: 100%;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.5;
-  
+
   font-family: Georgia, serif;
   color: white;
-  
 }
+
+.color-test {
+  background-color: white;
+  color: black
+}
+
+
+
 
 .sm-title {
   transform:scale(1,3);
   font-weight: 300;
-  position: relative;
-  left: 70px;
-  top: 50px;
+  position: absolute;
+  margin-left: 500px;
+  top: 60px;
   display: inline-block;
-  
+
 }
 
 .sm-title-1 {
   transform:scale(1,3);
   font-weight: 300;
-  position: absolute; 
-  right: 70px;
-  top: 50px;
+  position: absolute;
+  right: 850px;
+  top: 60px;
   display: inline-block;
-  
+
+}
+
+.toggle-position {
+  top: 15%;
+  font-size: 35px;
+
+}
+
+
+
+.toggle-movement {
+  <style>
+  .example2 {
+   height: 50px;
+   overflow: hidden;
+   position: relative;
+  }
+  .example2 h1 {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   line-height: 50px;
+   text-align: center;
+   /* Starting position */
+   -moz-transform:translateX(-100%);
+   -webkit-transform:translateX(-100%);
+   transform:translateX(-100%);
+   /* Apply animation to this element */
+   -moz-animation: example2 15s linear infinite;
+   -webkit-animation: example2 15s linear infinite;
+   animation: example2 15s linear infinite;
+  }
+  /* Move it (define the animation) */
+  @-moz-keyframes example2 {
+   0%   { -moz-transform: translateX(-100%); }
+   100% { -moz-transform: translateX(100%); }
+  }
+  @-webkit-keyframes example2 {
+   0%   { -webkit-transform: translateX(-100%); }
+   100% { -webkit-transform: translateX(100%); }
+  }
+  @keyframes example2 {
+   0%   {
+   -moz-transform: translateX(-100%); /* Firefox bug fix */
+   -webkit-transform: translateX(-100%); /* Firefox bug fix */
+   transform: translateX(-100%);
+   }
+   100% {
+   -moz-transform: translateX(100%); /* Firefox bug fix */
+   -webkit-transform: translateX(100%); /* Firefox bug fix */
+   transform: translateX(100%);
+   }
+  }
+  </style>
 }
 
 .sm-title-2 {
@@ -40,25 +102,132 @@ body {
   top: 70%;
   left:70px;
   word-spacing: 495px;
-  
+
 }
 
-.sm-credit-container {
-  font-family: Savoye LET, script;
-  font-size: 32pt;
-  
+.bottom-text-container {
+
+  position: absolute;
+  bottom: 200px;
+
+  right: 0;
+  left: 0
+
 }
+
+.bottom-text-left {
+  margin-left: 500px;
+  position: absolute;
+  display: inline;
+
+}
+
+.bottom-text-middle {
+  left: 760px;
+  position: absolute;
+
+  display: inline;
+}
+
+.bottom-text-right {
+  margin-right: 850px;
+  float: right;
+  position: relative;
+  display: inline;
+
+}
+
+.bottom-text-container h1 {
+  transform:scale(1,3);
+
+  display: inline;
+  font-weight: 300;
+
+  font-stretch: ultra-condensed;
+}
+
+
 
 .sm-credit-container {
   position: absolute;
-  top: 55%;
-  left: 550px;
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  font-size: 30px;
+  left: 600px;
+  bottom: 270px;
+
+
+
+
 }
 
 .sm-page-number {
   position: absolute;
-  top: 90%;
-  left: 640px;
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  font-size: 20px;
+  left: 775px;
+  bottom: 120px;
+  position: absolute;
+
 }
- 
+
+
+.button1 {
+  position: absolute;
+  bottom: 3%;
+  margin-left: 20px;
+  font-size: 15px;
+  font-family: Helvetica, Arial, sans-serif;
+  display: inline-block;
+}
+
+
+.button2 {
+  position: absolute;
+  bottom: 10%;
+  margin-left: 20px;
+  font-size: 15px;
+  font-family: Helvetica, Arial, sans-serif;
+  display: inline-block;
+
+
+}
+
+.button3 {
+  position: absolute;
+  bottom: 17%;
+  margin-left: 20px;
+  font-size: 15px;
+  font-family: Helvetica, Arial, sans-serif;
+  display: inline-block;
+}
+
+
+
+
+.handyeah {
+
+  position: absolute;
+  margin-left: 500px;
+  top: 30px;
+
+}
+
+img {
+  width: 28%;
+  height: auto;
+}
+
+
+a:link, a:visited {
+  background-color: purple;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+
+}
+
+a:hover, a:active {
+  background-color: blue;
 }

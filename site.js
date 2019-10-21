@@ -1,23 +1,25 @@
 $(function() {
   function init() {
     // Toggle bg colour on and off
-    $('.js-sm-colour').on('click', function (e) {
+    $('.background').on('click', function (e) {
       e.preventDefault();
-      $('body').toggleClass('sm-colour--on');
+     $('body').toggleClass('color-test');
+
+    })
+    // toggle position
+    $('.position').on('click', function (e) {
+      e.preventDefault();
+     $('.bottom-text-container' ).toggleClass('toggle-position');
+
     })
 
-    // Toggle bg colour on and off
-    $('.js-sm-position').on('click', function (e) {
+    // toggle movement
+    $('.movement').on('click', function (e) {
       e.preventDefault();
-      $('body').toggleClass('sm-position--on');
+     $('.sm-credit-container' ).toggleClass('toggle-movement');
+
     })
 
-    // Toggle bg colour on and off
-    $('.js-sm-move').on('click', function (e) {
-      e.preventDefault();
-      $('body').toggleClass('sm-move--on');
-    })
   }
-
   init();
 });
